@@ -16,7 +16,9 @@ uriPrefixedTags = ['{{{0}}}'.format(svgNs) + s for s in tags]
 
 qgisStylingAttributes = {'fill': 'param(fill)',
                      'stroke': 'param(outline)',
-                     'stroke-width': 'param(outline-width) 0'}
+                     'stroke-width': 'param(outline-width) 0',
+                     'fill-opacity': 'param(fill-opacity)',
+                     'stroke-opacity': 'param(outline-opacity)'}
 
 for dirpath, dirs, files in os.walk(svg_dir):
     for f in files:
